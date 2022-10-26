@@ -17,17 +17,17 @@ def save_dendrite_and_charts():
 
     plt.figure()
     plt.plot(dla.growth_time, list(range(0, dla.n_particles+1)))
-    plt.xlabel("Time (sec)")
-    plt.ylabel("# Particles")
+    plt.xlabel("Tiempo")
+    plt.ylabel("# Partículas")
     plt.title("Growth of the number of particles over time")
     plt.savefig("images/particles_growth.png", dpi=700)
     plt.close()
 
     plt.figure()
     plt.plot(dla.growth_time , dla.structure_length)
-    plt.xlabel("Time (sec)")
-    plt.ylabel("Length (# particles)")
-    plt.title("Structure length growth over time")
+    plt.xlabel("Tiempo (s)")
+    plt.ylabel("Longitud (# partículas)")
+    plt.title("Crecimiento de la longitud de la estructura a lo largo del tiempo")
     plt.savefig("images/length_growth.png", dpi=700)
     plt.close()
 
