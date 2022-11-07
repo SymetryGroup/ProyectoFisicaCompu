@@ -1,5 +1,5 @@
 import lichtenberg as lb
-from lichtenberg.archive import save
+from archive import save
 from pathlib import Path
 from random import randint
 
